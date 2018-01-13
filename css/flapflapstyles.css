@@ -26,6 +26,10 @@ h1 {
 	font-size: 40px;
 }
 
+a {
+	z-index: 99999;
+}
+
 .flexColumnStyle {
 	display: flex;
 	flex-direction: column;
@@ -125,7 +129,7 @@ h1 {
 	color: white;
 	width: inherit;
 	position: absolute;
-	bottom: -70px;
+	bottom: -60px;
 }
 
 
