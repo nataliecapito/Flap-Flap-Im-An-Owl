@@ -9,3 +9,10 @@ github pages runs this particular site.
 
 for viewing live
 https://smacknat.github.io/Flap-Flap-Im-an-OWL/
+
+## Example Images (if GitHub pages is having trouble rendering .css)
+**desktop view**
+- ![desktop-Flap](images/regular_preview.png)
+
+**mobile view**
+- ![mobile-Flap](images/phone_preview.png)
