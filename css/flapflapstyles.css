@@ -7,7 +7,7 @@
 }
 
 body {
-	font-family: source-sans-pro;
+	font-family: "Arial";
 	margin: 0;
 	font-style: normal;
 	font-weight: 200;
@@ -20,19 +20,23 @@ body {
 h1 {
 	height: auto;
 	width: auto;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 40px;
 }
 
 .flexColumnStyle {
 	display: flex;
 	flex-direction: column;
-	align-content: center;
+	align-items: center;
 	justify-content: center;
 }
 
 .flexRowStyle {
 	display: flex;
 	flex-direction: row;
-	align-content: center;
+	align-items: center;
 	justify-content: center;
 }
 
@@ -41,29 +45,44 @@ h1 {
 	width: inherit;
 	height: inherit;
 	position: relative;
-	min-height: 100%;
 }
 
 .mainContentStyle {
 	position: relative;
-	height: 500px;
+	justify-content: space-around;
+}
+
+#pressButtonStyle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	background-color: transparent;
+	cursor: pointer;
+	z-index: 1;
 }
 
 /*owl stylings*/
 #Owl {
-	width: 300px;
-	height: 200px;
+	width: 500px;
 	overflow: hidden;
+	position: relative;
+	height: inherit;
 }
 #imageBodyStyle {
 	position: absolute;
 	height: inherit;
 	width: inherit;
+	top: -130px;
+	left 400px:
 }
 #imageHeadStyle {
 	position: absolute;
-	height: inherit;
-	width: inherit;
+	height: 180px;
+	width: 180px;
+	right: 25px;
+	top: 220px;
 }
 #imageFireStyle {
 	position: absolute;
@@ -79,6 +98,9 @@ h1 {
 	bottom: 0;
 	left: 0;
 	display: block;
+	z-index: 2;
+	pointer-events: none;
+	cursor: default;
 }
 
 #footerContainerStyle {
@@ -90,18 +112,16 @@ h1 {
 
 .copyrightStyle {
 	filter: blur(5px);
-	z-index: 0;
+	z-index: 3;
 	position: absolute;
 	width: inherit;
 	height: inherit;
-	top: 40px;
-	left: 0;
-}
-#copyrightTextStyle {
-	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 2;
+}
+
+#copyrightTextStyle {
+	z-index: 4;
 	color: white;
 	width: inherit;
 }
