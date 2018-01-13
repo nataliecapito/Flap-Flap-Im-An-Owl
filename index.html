@@ -13,55 +13,52 @@
 		function changeImage() {
 			if (click != 0) {
 				setTimeout(function(){ 
-					document.getElementById("imageHeadStyle").src = "images/head2.png";
+					document.getElementById("imageHead").src = "images/head2.png";
 				}, 0);
 				setTimeout(function(){ 
-					document.getElementById("imageHeadStyle").src = "images/head3.png";
-					document.getElementById("imageFireStyle").src = "images/fire.png";
-					document.getElementById("imageFireStyle").style.display = "block";
+					document.getElementById("imageHead").src = "images/head3.png";
+					document.getElementById("imageFire").src = "images/fire.gif";
+					document.getElementById("imageFire").style.display = "block";
 				}, 500);
 				click = 0;
 			} else if (click == 0) {
-				document.getElementById("imageHeadStyle").src = "images/head1.png";
-				document.getElementById("imageFireStyle").style.display = "none";
+				document.getElementById("imageHead").src = "images/head1.png";
+				document.getElementById("imageFire").style.display = "none";
 				click = 1;
 			}
 		}
 	</script>
+		
 </head>
 	<body>
 		<div class="containerStyle flexColumnStyle"> 
-			<section class="flexRowStyle mainContentStyle"> 
-				<button id="pressButtonStyle" onclick="changeImage();"></button>
+			<div class="flexRowStyle containerStyle"> 
+				<button id="pressButton" onclick="changeImage();"></button>
 				<h1>
-					Click! Click! Click!
+					Click for the fun!
 				</h1>
+				<img src="images/fire.gif" id="imageFire" />
 				<div id="Owl">
-					<img src="images/owl.gif" id="imageBodyStyle" />
-					<img src="images/head1.png" id="imageHeadStyle" />
-					<img src="/images/fire.gif" id="imageFireStyle" />
+					<img src="images/owl.gif" id="imageBody" />
+					<img src="images/head1.png" id="imageHead" />
 				</div>
-			</section>
-			
-			<section class="footer" id="footer">
-				<div id="footerContainerStyle">
-					<div class="copyrightStyle" ></div>
-					<div id="copyrightTextStyle">
-						&copy;2018 Flap Flap Im an Owl | website created by &nbsp;
-						<a target="_blank" href="https://sleepylunadesigns.com/">
-							Sleepy Luna Designs
-						</a>
-						<br />
-						<a 
-						   target="_blank" 
-						   href="https://i.imgur.com/qlgoLVk.png"
-						   style="font-size: 10px;"
-						>
-							bg image found here. NOT creaded by me.
-						</a>
-					</div>
+			</div>
+			<div class="footer flexColumnStyle" id="footer">
+				<div id="copyrightText">
+					&copy;2018 Flap Flap Im an Owl | website created by &nbsp;
+					<a target="_blank" href="https://sleepylunadesigns.com/">
+						Sleepy Luna Designs
+					</a>
+					<br />
+					<a 
+					   target="_blank" 
+					   href="https://i.imgur.com/qlgoLVk.png"
+					   style="font-size: 10px;"
+					>
+						BG image found here, NOT creaded by me.
+					</a>
 				</div>
-			</section>
+			</div>
 		</div>
 	</body>
 </html>
