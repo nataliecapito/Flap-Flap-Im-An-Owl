@@ -1,22 +1,109 @@
 @charset "UTF-8";
 /* Universal Styles */
-body {
-	font-family: source-sans-pro;
-	background-color: white;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	font-style: normal;
-	font-weight: 200;
+* {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
+body {
+	font-family: source-sans-pro;
+	margin: 0;
+	font-style: normal;
+	font-weight: 200;
+	background-image: url("/images/landscape.gif");
+	background-color: #6655b9;
+	width: inherit;
+	height: inherit;
+}
+
+h1 {
+	height: auto;
+	width: auto;
+}
+
+.flexColumnStyle {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.flexRowStyle {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+
+/*content stylings*/
 .containerStyle {
-	
+	width: inherit;
+	height: inherit;
+	position: relative;
+	min-height: 100%;
+}
+
+.mainContentStyle {
+	position: relative;
+	height: 500px;
+}
+
+/*owl stylings*/
+#Owl {
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+}
+#imageBodyStyle {
+	position: absolute;
+	height: inherit;
+	width: inherit;
+}
+#imageHeadStyle {
+	position: absolute;
+	height: inherit;
+	width: inherit;
+}
+#imageFireStyle {
+	position: absolute;
+	height: inherit;
+	width: inherit;
+}
+
+/*footer stylings*/
+.footer {
+	width: inherit;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+}
+
+#footerContainerStyle {
+	position: relative;
+	height: inherit;
+	width: inherit;
+	text-align: center;
 }
 
 .copyrightStyle {
-	
+	filter: blur(5px);
+	z-index: 0;
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	top: 40px;
+	left: 0;
+}
+#copyrightTextStyle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	color: white;
+	width: inherit;
 }
 
 
