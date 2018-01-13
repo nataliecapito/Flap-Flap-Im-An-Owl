@@ -87,6 +87,7 @@ h1 {
 	position: absolute;
 	height: inherit;
 	width: inherit;
+	display: none;
 }
 
 /*footer stylings*/

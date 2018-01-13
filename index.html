@@ -9,14 +9,22 @@
 	<script>var __adobewebfontsappname__="dreamweaver"</script>
 	<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
 	<script type="text/javascript">
-		var myLink = document.getElementById("pressButtonStyle");
-		myLink.onclick = function changeImage() {
-			if (document.getElementById("imageHeadStyle").src == "images/head1.png") {
-				document.getElementById("imageHeadStyle").src = "images/head3.png";
-				document.getElementById("imageFireStyle").src = "images/fire.png";
-			} else {
+		var click;
+		function changeImage() {
+			if (click != 0) {
+				setTimeout(function(){ 
+					document.getElementById("imageHeadStyle").src = "images/head2.png";
+				}, 0);
+				setTimeout(function(){ 
+					document.getElementById("imageHeadStyle").src = "images/head3.png";
+					document.getElementById("imageFireStyle").src = "images/fire.png";
+					document.getElementById("imageFireStyle").style.display = "block";
+				}, 500);
+				click = 0;
+			} else if (click == 0) {
 				document.getElementById("imageHeadStyle").src = "images/head1.png";
-				document.getElementById("imageFireStyle").src = "";
+				document.getElementById("imageFireStyle").style.display = "none";
+				click = 1;
 			}
 		}
 	</script>
