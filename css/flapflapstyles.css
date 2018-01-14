@@ -1,29 +1,34 @@
 @charset "UTF-8";
-/* Universal Styles */
-* {
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-}
 
+/* Universal Styles */
 body {
 	font-family: "Arial";
-	margin: 0;
-	font-style: normal;
+	font-style: 15px;
 	font-weight: 200;
-	background-image: url("https://i.imgur.com/qlgoLVk.png");
-	background-color: #6655b9;
-	width: inherit;
-	height: inherit;
+	background-color: #78c9f9;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	max-height: 100%;
+	position: relative;
+	margin: auto;
 }
 
 h1 {
-	height: auto;
-	width: auto;
 	color: white;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 40px;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: underline;
 }
 
 .flexColumnStyle {
@@ -42,7 +47,8 @@ h1 {
 
 /*content stylings*/
 .containerStyle {
-	width: 985px;
+	max-width: 1100px;
+	width: 100%;
 	height: inherit;
 	position: relative;
 	margin: auto;
@@ -58,12 +64,16 @@ h1 {
 	cursor: pointer;
 	z-index: 999;
 	border: none;
+	outline: 0;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
 }
 
-/*owl stylings*/
+/*---owl stylings*/
 #Owl {
 	width: 500px;
-	height: 665px;
+	height: 500px;
 	overflow: hidden;
 	position: relative;
 }
@@ -71,136 +81,107 @@ h1 {
 	position: absolute;
 	height: inherit;
 	width: inherit;
-	top: -130px;
+	top: 0px;
 	left: 0px;
 	z-index: 100;
 }
 #imageHead {
 	position: absolute;
-	height: 180px;
-	width: 180px;
-	right: 25px;
-	top: 180px;
+	height: 170px;
+	width: 170px;
+	right: 0px;
+	top: 170px;
 	z-index: 101;
 }
 #imageFire {
 	position: absolute;
 	height: inherit;
-	width: inherit;
+	width: 150px;
 	display: none;
-	bottom: -330px;
-	right: -835px;
-	z-index: 102;
+	top: 0px;
+	right: 0px;
+	z-index: 99;
 }
 
-/*footer stylings*/
+/*---footer stylings*/
 .footer {
 	width: inherit;
 	height: 100px;
 	text-align: center;
-	color: white;
+	color: black;
 	padding: 10px 0;
+	font-weight: bold;
+	background-image: linear-gradient(45deg, white 25%, transparent 25%), linear-gradient(-45deg, white 25%, transparent 25%), linear-gradient(45deg, transparent 75%, white 75%), linear-gradient(-45deg, transparent 75%, white 75%);
+  	background-size: 20px 20px;
+  	background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+	position: fixed;
+	bottom: 0;
 }
 
+/*MOBILE AND SMALLER RESPONSIVE*/
 /* super small mobile */
 @media (max-width: 320px) {
-	.containerStyle {
-		width: 100%;
-		max-width: 500px;
-		margin: 0;
-	}
-	
 	.flexRowStyle {
 		flex-direction: column;
-		text-align: center;
-		justify-content: space-around;
+	}
+	.containerStyle {
+		max-width: 500px;
 	}
 	
 	#Owl {
-		max-height: 400px;
-		width: inherit;
-		height: 100%;
+		max-width: 500px;
+		width: 100%;
 	}
 	#imageBody {
-		top: -65px;
-		left: 0px;
-		z-index: 100;
+		left: -30px;
 	}
 	#imageHead {
-		height: 100px;
-		width: 100px;
-		right: 65px;
-		top: 110px;
-	}
-	#imageFire {
-		bottom: -345px;
-		right: -260px;
+		height: 130px;
+		width: 130px;
+		right: 30px;
+		top: 190px;
 	}
 }
 
 /* Small Tablets and mobile */
 @media (min-width: 321px)and (max-width: 767px) {
-	.containerStyle {
-		width: 100%;
-		max-width: 500px;
-		margin: 0;
-	}
-	
 	.flexRowStyle {
 		flex-direction: column;
-		text-align: center;
-		justify-content: space-around;
+	}
+	.containerStyle {
+		max-width: 555px;
 	}
 	
 	#Owl {
-		max-height: 400px;
-		width: inherit;
-		height: 100%;
+		max-width: 555px;
+		width: 100%;
 	}
 	#imageBody {
-		top: -65px;
-		left: 0px;
-		z-index: 100;
+		left: -30px;
 	}
 	#imageHead {
-		height: 100px;
-		width: 100px;
-		right: 65px;
-		top: 110px;
-	}
-	#imageFire {
-		bottom: -345px;
-		right: -260px;
+		height: 130px;
+		width: 130px;
+		right: 30px;
+		top: 190px;
 	}
 }
 
 /* Small Desktops */
 @media (min-width: 768px) and (max-width: 1096px) {
-	.flexRowStyle {
-		flex-direction: column;
-		text-align: center;
-		justify-content: space-around;
+	.containerStyle {
+		max-width: 800px;
 	}
 	
 	#Owl {
-		max-width: 700px;
-		max-height: 555px;
-		width: 100%;
-		height: 100%;
+		width: 500px;
+		height: 500px;
 	}
 	#imageBody {
-		top: -65px;
-		left: 0px;
-		z-index: 100;
+		left: -50px;
 	}
 	#imageHead {
-		height: 165px;
-		width: 165px;
-		right: 85px;
-		top: 135px;
-	}
-	#imageFire {
-		bottom: -385px;
-		right: -675px;
+		height: 150px;
+		width: 150px;
 	}
 }
