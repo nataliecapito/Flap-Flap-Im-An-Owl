@@ -5,7 +5,9 @@ Website created with standard HTML, CSS, and JAVASCRIPT used for testing purpose
 For development this site was built with Dreamweaver, and so, should be able to run or be opened on most any programs that can read .html and .css files.
 
 ## Publishing
-github pages runs this particular site.
+GitHub pages runs this particular site.
 
 ## Viewing Live
 https://smacknat.github.io/Flap-Flap-Im-an-OWL/
+
+### Updated: 3/28/18
