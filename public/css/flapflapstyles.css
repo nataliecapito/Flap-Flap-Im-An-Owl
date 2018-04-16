@@ -11,7 +11,6 @@ body {
 		height: 100%;
 		min-height: 100%;
 		max-height: 100%;
-		position: relative;
 		margin: auto;
 }
 
@@ -25,7 +24,7 @@ h1 {
 
 a {
 		text-decoration: none;
-		color: black;
+		color: white;
 		font-weight: bold;
 }
 a:hover {
@@ -38,7 +37,6 @@ a:hover {
 		align-items: center;
 		justify-content: center;
 }
-
 .flexRowStyle {
 		display: flex;
 		flex-direction: row;
@@ -48,7 +46,7 @@ a:hover {
 
 /* content style */
 .containerStyle {
-		max-width: 1100px;
+		max-width: 900px;
 		width: 100%;
 		height: inherit;
 		position: relative;
@@ -73,25 +71,27 @@ a:hover {
 
 /* image owl style */
 #Owl {
-		width: 500px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+		width: inherit;
 		height: 500px;
 		overflow: hidden;
 		position: relative;
 }
+
 #imageBody {
-		position: absolute;
-		height: inherit;
-		width: inherit;
-		top: 0px;
-		left: 0px;
-		z-index: 100;
+		width: 500px;
+		height: 500px;
 }
 #imageHead {
 		position: absolute;
 		height: 170px;
 		width: 170px;
-		right: 0px;
-		top: 170px;
+		right: 3px;
+		top: 165px;
 		z-index: 101;
 }
 #imageFire {
@@ -100,7 +100,7 @@ a:hover {
 		width: 150px;
 		display: none;
 		top: 0px;
-		right: 0px;
+		right: -5px;
 		z-index: 99;
 }
 
@@ -112,77 +112,57 @@ a:hover {
 		color: black;
 		padding: 10px 0;
 		font-weight: bold;
-		background-image: linear-gradient(45deg, white 25%, transparent 25%), linear-gradient(-45deg, white 25%, transparent 25%), linear-gradient(45deg, transparent 75%, white 75%), linear-gradient(-45deg, transparent 75%, white 75%);
-		background-size: 20px 20px;
-		background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+		background-color: #6bb7e4;
 		position: fixed;
 		bottom: 0;
+		border-top: solid white 5px;
 }
 
 /* MOBILE */
 /* small desktops */
-@media (min-width: 768px) and (max-width: 1096px) {
+@media only screen and (max-width: 760px) {
+	/* content style */
 	.containerStyle {
 			max-width: 800px;
+			padding: 10px;
 	}
 
+	/* image owl style */
 	#Owl {
-			width: 500px;
-			height: 500px;
+			flex-direction: column;
+			height: inherit;
+			width: 250px;
 	}
+
 	#imageBody {
-			left: -50px;
+			width: inherit;
+			height: 350px;
+			z-index: 100;
 	}
 	#imageHead {
-			height: 150px;
+			height: 90px;
+			width: 90px;
+			top: 328px;
+	}
+	#imageFire {
 			width: 150px;
+			top: 0px;
+			right: -5px;
 	}
+
 }
 
-/* small tablets/mobile */
-@media (min-width: 321px)and (max-width: 767px) {
+/* mobile */
+@media only screen and (max-width: 400px) {
+	/* universal style */
 	.flexRowStyle {
 			flex-direction: column;
 	}
-	.containerStyle {
-			max-width: 555px;
-	}
 
-	#Owl {
-			max-width: 555px;
-			width: 100%;
-	}
-	#imageBody {
-			left: -30px;
-	}
-	#imageHead {
-			height: 130px;
-			width: 130px;
-			right: 30px;
-			top: 190px;
-	}
-}
-
-/* super small mobile */
-@media (max-width: 320px) {
-	.flexRowStyle {
-			flex-direction: column;
-	}
+	/* content style */
 	.containerStyle {
 			max-width: 500px;
 	}
 
-	#Owl {
-			max-width: 500px;
-			width: 100%;
-	}
-	#imageBody {
-			left: -30px;
-	}
-	#imageHead {
-			height: 130px;
-			width: 130px;
-			right: 30px;
-			top: 190px;
-	}
+	/* image owl style */
 }
