@@ -1,49 +1,54 @@
 <!doctype html>
 <html lang="en-US">
 	<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Flap Flap I'm an Owl</title>
-	<link href="css/flapflapstyles.css" rel="stylesheet" type="text/css">
-	<link rel="icon" href="images/favicon.ico">
-	<script>var __adobewebfontsappname__="dreamweaver"</script>
-	<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		var click;
-		function changeImage() {
-			if (click != 0) {
-				setTimeout(function(){
-					document.getElementById("imageHead").src = "images/head2.png";
-				}, 0);
-				setTimeout(function(){
-					document.getElementById("imageHead").src = "images/head3.png";
-					document.getElementById("imageFire").src = "images/fire.gif";
-					document.getElementById("imageFire").style.display = "block";
-				}, 500);
-				click = 0;
-			} else if (click == 0) {
-				document.getElementById("imageHead").src = "images/head1.png";
-				document.getElementById("imageFire").style.display = "none";
-				click = 1;
-			}
-		}
-	</script>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
+		<link href="./public/css/flapflapstyles.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="./public/images/favicon.ico">
+
+		<title>Flap Flap I'm an Owl</title>
+
+		<script>var __adobewebfontsappname__="dreamweaver"</script>
+		<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var click;
+
+			function changeImage() {
+				if (click != 0) {
+					setTimeout(function(){
+						document.getElementById("imageHead").src = "./public/images/head2.png";
+					}, 0);
+
+					setTimeout(function(){
+						document.getElementById("imageFire").style.display = "block";
+						document.getElementById("imageHead").src = "./public/images/head3.png";
+						document.getElementById("imageFire").src = "./public/images/fire.gif";
+					}, 500);
+
+					click = 0;
+				} else if (click == 0) {
+					document.getElementById("imageFire").style.display = "none";
+					document.getElementById("imageHead").src = "./public/images/head1.png";
+					click = 1;
+				}
+			}
+		</script>
+	</head>
+
 	<body>
-		<section class="containerStyle flexRowStyle">
+		<section id="Flap-Flap-Main" class="containerStyle flexRowStyle">
 			<button id="pressButton" onclick="changeImage();"></button>
-			<h1>
-				Click for a surprise.
-			</h1>
+			<h1>Click for a surprise.</h1>
 			<div id="Owl">
-				<img src="images/owl.gif" id="imageBody" />
-				<img src="images/head1.png" id="imageHead" />
-				<img src="images/fire.gif" id="imageFire" />
+				<img id="imageBody" src="./public/images/owl.gif" />
+				<img id="imageHead" src="./public/images/head1.png" />
+				<img id="imageFire" src="./public/images/fire.gif" />
 			</div>
 		</section>
-		<section class="footer flexRowStyle" id="footer">
+
+		<section id="Flap-Flap-Footer" class="footer flexRowStyle">
 			&copy;2018 Flap Flap Im an Owl | website created by &nbsp;
 			<a target="_blank" href="https://sleepylunadesigns.com/">
 				Sleepy Luna Designs
