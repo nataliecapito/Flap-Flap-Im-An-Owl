@@ -1,4 +1,4 @@
-# Flap-Flap-Im-an-OWL
+# Flap-Flap-Im-An-Owl
 ## Description
 Website created with standard HTML, CSS, and JAVASCRIPT used for testing purposes. Made with Dreamweaver and Photoshop. This site is just a dumb site that has a flapping owl you can click on to shoot fire.
 
@@ -10,7 +10,7 @@ Website created with standard HTML, CSS, and JAVASCRIPT used for testing purpose
 - GitHub pages runs this particular site.
 
 ## Viewing Live
-- https://smacknat.github.io/Flap-Flap-Im-an-OWL/
+- https://smacknat.github.io/Flap-Flap-Im-An-Owl/
 
 ## Example Images
 | O.P | Panel | |
@@ -18,4 +18,4 @@ Website created with standard HTML, CSS, and JAVASCRIPT used for testing purpose
 | `PC/MAC` | Home | ![Flap-Flap-home-page](public/images/preview_images/regular_preview.png) |
 | `Mobile` | Home | ![Flap-Flap-home-page-mobile](public/images/preview_images/phone_preview.png) |
 
-### Updated: 4/16/18
+### Updated: 09/09/18
