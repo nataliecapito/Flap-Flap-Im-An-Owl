@@ -9,7 +9,7 @@
 - GitHub pages runs this particular site.
 
 ## Viewing Live
-- https://smacknat.github.io/Flap-Flap-Im-An-Owl/
+- https://nataliecapito.github.io/Flap-Flap-Im-An-Owl/
 
 ## Example Images (09/09/18)
 | O.P | Panel | |
@@ -17,4 +17,5 @@
 | `PC/MAC` | Home | ![Flap-Flap-home-page](public/images/preview_images/regular_preview.png) |
 | `Mobile` | Home | ![Flap-Flap-home-page-mobile](public/images/preview_images/phone_preview.png) |
 
-### Updated: 09/09/18
+### Updated: 09/09/18 
+- 06/27/2023 - GitHub name change update
